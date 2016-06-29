@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>员工查询-入职</title>
+   		<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+    	<link rel="stylesheet" type="text/css" href="../../../css/theme.css">
+	</head>
+<body>
+
+<div id="container">
+    <div id="div_left">
+        <div class="gs_logo"></div>
+        <div class="sidebar-nav">
+        	<a id="sub01" class="menu" href="#">人力资源管理</a>
+        	<ul class="nav-list i-sub01">
+                <li><a href="department.html">部门管理</a></li>
+                <li><a href="staff.html">员工管理</a></li>
+                <li><a href="check.html">假期管理</a></li>
+                <li><a href="insurance.html">保险核定</a></li>
+                <li><a href="leave.html" class="current">离职管理</a></li>
+             </ul> 
+             <a id="sub02" class="menu" href="#">财务管理</a>
+             <ul class="nav-list i-sub02">
+                <li><a href="../finance/contract.html">合同管理</a></li>
+                <li><a href="../finance/salary-report.html">部门工资上报</a></li>
+                <li><a href="../finance/payroll.html">工资发放</a></li>
+                <li><a href="../finance/historical-wage.html">历史工资明细</a></li>
+                <li><a href="../finance/time-piece.html">计件计时导入</a></li>
+                <li><a href="../finance/meals.html">餐费核定</a></li>
+                <li><a href="../finance/bill.html">话费核定</a></li>
+                <li><a href="../finance/achievement.html">绩效核定</a></li>
+             </ul> 
+             <a class="menu" href="../finance/budget.html">预决算管理</a>
+             <a class="menu" href="../finance/dismiss.html">辞退工资</a>
+             <a class="menu" href="../finance/bonus.html">年终奖</a>
+        </div>
+    </div>
+    <div id="div_top">
+        <ul class="top_icon">
+            <li><a href="../user/help.html" class="top_a"><i class="hIcon ico_jsq"></i><span>帮助</span></a></li>
+            <li><a href="javascript:void(0);" class="top_a"><i class="hIcon ico_tc"></i><span>退出</span></a></li>
+            <li>
+              <a href="../user/userEdit.html"class="username">
+                  <span><img src="../../../images/nopic.png"/></span>
+                  <p>
+                      <strong>代用名</strong><br/>
+                      人力资源管理
+                  </p>
+              </a>
+            </li>
+        </ul>
+    </div>
+    <!--主体开始-->  
+    <div class="content">
+        <ul class="breadcrumb">
+            <li><a href="../index.html">首页</a> <span class="divider">/</span></li>
+            <li><a href="leave.html">离职管理</a> <span class="divider">/</span></li>
+            <li class="active">离职办理</li>
+        </ul>
+
+        <div class="container-fluid" style="text-align:center;">
+		        
+<form>	
+<div class="well you-bg"> 
+		<table class="youAdd">
+                <tr>
+                    <td class="TDleft width="140""><label>部门：</label></td>
+                    <td><input type="text" value="" class="input-medium"><a class="btn btn-link">选择姓名</a></td>
+               </tr>
+                <tr>
+                    <td class="TDleft" width="140"><label>姓名：</label></td>
+                    <td><input type="text" value="" class="input-medium"><a class="btn btn-link">选择姓名</a></td>
+                </tr>
+                <tr>
+                    <td class="TDleft"><label>职员代码：</label></td>
+                    <td><input type="text" value="" class="input-medium" disabled></td>
+               </tr>
+                <tr>
+                    <td class="TDleft"><label>身份证号：</label></td>
+                    <td><input type="text" value="" class="input-medium" disabled></td>
+               </tr>
+                <tr>
+                    <td class="TDleft"><label>联系电话：</label></td>
+                    <td><input type="text" value="" class="input-medium" disabled></td>
+               </tr>
+                <tr>
+                    <td class="TDleft"><label>离职时间：</label></td>
+                    <td><input type="text" value="" class="input-medium"></td>
+                </tr>							
+      </table>
+</div>
+ <div class="btn-youAdd">
+    <input name="name" type="button" value="确 定" class="btn btn-primary">
+</div>
+</form>
+
+
+        </div>
+    </div>  
+    <!--主体结束--> 
+</div>
+
+</body>
+</html>

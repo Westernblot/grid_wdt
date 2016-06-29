@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>员工查询-入职</title>
+   		<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+    	<link rel="stylesheet" type="text/css" href="../../../css/theme.css">
+	</head>
+<body>
+
+<div id="container">
+    <div id="div_left">
+        <div class="gs_logo"></div>
+        <div class="sidebar-nav">
+        	<a id="sub01" class="menu" href="#">人力资源管理</a>
+        	<ul class="nav-list i-sub01">
+                <li><a href="department.html">部门管理</a></li>
+                <li><a href="staff.html" class="current">员工管理</a></li>
+                <li><a href="check.html">假期管理</a></li>
+                <li><a href="insurance.html">保险核定</a></li>
+                <li><a href="leave.html">离职管理</a></li>
+             </ul> 
+             <a id="sub02" class="menu" href="#">财务管理</a>
+             <ul class="nav-list i-sub02">
+                <li><a href="../finance/contract.html">合同管理</a></li>
+                <li><a href="../finance/salary-report.html">部门工资上报</a></li>
+                <li><a href="../finance/payroll.html">工资发放</a></li>
+                <li><a href="../finance/historical-wage.html">历史工资明细</a></li>
+                <li><a href="../finance/time-piece.html">计件计时导入</a></li>
+                <li><a href="../finance/meals.html">餐费核定</a></li>
+                <li><a href="../finance/bill.html">话费核定</a></li>
+                <li><a href="../finance/achievement.html">绩效核定</a></li>
+             </ul> 
+             <a class="menu" href="../finance/budget.html">预决算管理</a>
+             <a class="menu" href="../finance/dismiss.html">辞退工资</a>
+             <a class="menu" href="../finance/bonus.html">年终奖</a>
+        </div>
+    </div>
+    <div id="div_top">
+        <ul class="top_icon">
+            <li><a href="../user/help.html" class="top_a"><i class="hIcon ico_jsq"></i><span>帮助</span></a></li>
+            <li><a href="javascript:void(0);" class="top_a"><i class="hIcon ico_tc"></i><span>退出</span></a></li>
+            <li>
+              <a href="../user/userEdit.html"class="username">
+                  <span><img src="../../../images/nopic.png"/></span>
+                  <p>
+                      <strong>代用名</strong><br/>
+                      人力资源管理
+                  </p>
+              </a>
+            </li>
+        </ul>
+    </div>
+    <!--主体开始-->  
+    <div class="content">
+        <ul class="breadcrumb">
+            <li><a href="../index.html">首页</a> <span class="divider">/</span></li>
+            <li><a href="staff.html">员工查询</a> <span class="divider">/</span></li>
+            <li class="active">入职</li>
+        </ul>
+
+        <div class="container-fluid">
+        
+<div class="btn-toolbar">
+    <a href="staff.html" class="btn btn-block">返回</a>
+</div>			        
+<form>	
+<div class="well"> 
+		<table class="youAdd" width="80%">
+                <tr>
+                    <td class="TDleft width="140""><label>姓名：</label></td>
+                    <td><input type="text" value="" class="input-medium"></td>
+                    <td class="TDleft" width="140"><label>身份证号：</label></td>
+                    <td><input type="text" value="" class="input-medium"></td>
+                </tr>
+                <tr>
+                    <td class="TDleft"><label>出生年月：</label></td>
+                    <td><input type="text" value="1996-01-01" class="input-small"></td>
+                    <td class="TDleft"><label>籍贯：</label></td>
+                    <td><input type="text" value="" class="input-small"></td>
+               </tr>
+                <tr>
+                    <td class="TDleft"><label>性别：</label></td>
+                    <td>
+                        <label><input name="sex" type="radio" value="man"> 男</label>　
+                        <label><input name="sex" type="radio" value="woman" checked> 女</label>
+                    </td>
+                    <td class="TDleft"><label>婚否：</label></td>
+                    <td>
+                        <label><input name="marriage" type="radio" value="no"> 未婚</label>　
+                        <label><input name="marriage" type="radio" value="yes" checked> 已婚</label>
+                    </td>
+                </tr>						
+                <tr>
+                    <td class="TDleft"><label>学历：</label></td>
+                    <td><select class="input-medium">
+                      <option value="0" selected>请选择学历</option>
+                      <option value="1">硕士</option>
+                      <option value="2">学士</option>
+                      <option value="3">本科</option>
+                      <option value="4">专科</option>
+                      <option value="5">高职高专</option>
+                      <option value="6">高中</option>
+                      <option value="6">初中</option>
+                      <option value="7">小学</option>
+                    </select></td>
+                    <td class="TDleft"><label>联系电话：</label></td>
+                    <td><input type="text" value="" class="input-medium"></td>
+               </tr>
+                <tr>
+                    <td class="TDleft"><label>紧急联系人：</label></td>
+                    <td><input type="text" value="" class="input-medium"></td>
+                    <td class="TDleft"><label>家庭住址：</label></td>
+                    <td><input type="text" value="湖北省黄石市交通路特1号" class="input-xlarge"></td>
+               </tr>
+                <tr>
+                    <td class="TDleft"><label>紧急联系人电话：</label></td>
+                    <td><input type="text" value="" class="input-medium"></td>
+                    <td class="TDleft"><label>银行账号：</label></td>
+                    <td>
+                        <input type="text" value="" class="input-xlarge">
+                    </td>
+               </tr>
+                <tr>
+                    <td class="TDleft"><label>影像资料：</label></td>
+                    <td colspan="3"><input name="" type="file"></td>
+               </tr>		
+      </table>
+      <hr/>
+		<table class="youAdd" width="80%">
+                <tr>
+                    <td class="TDleft" width="140"><label>社保号：</label></td>
+                    <td><input type="text" value="" class="input-medium"></td>
+                    <td class="TDleft" width="140"><label>医保号：</label></td>
+                    <td><input type="text" value="" class="input-medium" ></td>
+               </tr>
+                <tr>
+                    <td class="TDleft"><label>职员代码：</label></td>
+                    <td><input type="text" value="" class="input-medium"></td>
+                    <td class="TDleft"><label>入职时间：</label></td>
+                    <td><input type="text" value="1996-01-01" class="input-medium" ></td>
+               </tr>			
+                <tr>
+                    <td class="TDleft"><label>基本工资：</label></td>
+                    <td><input type="text" value="" class="input-amount input-medium"></td>
+                    <td class="TDleft"><label>在岗状态：</label></td>
+                    <td><select class="input-medium">
+                      <option value="0" selected>请选择在岗状态</option>
+                    </select>
+                    </td>
+               </tr>				
+                <tr>
+                    <td class="TDleft"><label>部门：</label></td>
+                    <td><input type="text" value="" class="input-medium"><button class="btn btn-link" href="budgetAdd.html">选择部门</button>　</td>
+                    <td class="TDleft"><label>职员类别：</label></td>
+                    <td><select class="input-medium">
+                      <option value="0" selected>请选择职员类别</option>
+                      <option value="1">普通职员</option>
+                      <option value="4">组长</option>
+                      <option value="3">主任</option>
+                      <option value="2">科长</option>
+                    </select>
+                    </td>
+               </tr>		
+                <tr>
+                    <td class="TDleft"><label>就业合同编号：</label></td>
+                    <td><input type="text" value="" class="input-large"></td>
+                    <td class="TDleft"><label>合同签订时间：</label></td>
+                    <td><input type="text" value="1996-01-01" class="input-medium"></td>
+               </tr>
+                <tr>
+                    <td class="TDleft"><label>合同年限：</label></td>
+                    <td><select class="input-medium">
+                      <option value="0" selected>请选择合同年限</option>
+                      <option value="1">半年</option>
+                      <option value="2">一年</option>
+                      <option value="3">二年</option>
+                      <option value="4">三年</option>
+                      <option value="5">六年</option>
+                      <option value="6">十年</option>
+                    </select></td>
+                    <td class="TDleft"><label>到期时间：</label></td>
+                    <td><input type="text" value="1996-01-01" class="input-medium" disabled></td>
+               </tr>
+        </table>
+		
+</div>
+ <div class="btn-youAdd w500">
+    <input name="name" type="button" value="保 存" class="btn btn-primary">
+</div>
+</form>
+
+
+        </div>
+    </div>  
+    <!--主体结束--> 
+</div>
+
+</body>
+</html>

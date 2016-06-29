@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>员工管理</title>
+   		<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+    	<link rel="stylesheet" type="text/css" href="../../../css/theme.css">
+	</head>
+<body>
+
+<div id="container">
+    <div id="div_left">
+        <div class="gs_logo"></div>
+        <div class="sidebar-nav">
+        	<a id="sub01" class="menu" href="#">人力资源管理</a>
+        	<ul class="nav-list i-sub01">
+                <li><a href="department.html">部门管理</a></li>
+                <li><a href="staff.html">员工管理</a></li>
+                <li><a href="check.html">假期管理</a></li>
+                <li><a href="insurance.html">保险核定</a></li>
+                <li><a href="leave.html" class="current">离职管理</a></li>
+             </ul> 
+             <a id="sub02" class="menu" href="#">财务管理</a>
+             <ul class="nav-list i-sub02">
+                <li><a href="../finance/contract.html">合同管理</a></li>
+                <li><a href="../finance/salary-report.html">部门工资上报</a></li>
+                <li><a href="../finance/payroll.html">工资发放</a></li>
+                <li><a href="../finance/historical-wage.html">历史工资明细</a></li>
+                <li><a href="../finance/time-piece.html">计件计时导入</a></li>
+                <li><a href="../finance/meals.html">餐费核定</a></li>
+                <li><a href="../finance/bill.html">话费核定</a></li>
+                <li><a href="../finance/achievement.html">绩效核定</a></li>
+             </ul> 
+             <a class="menu" href="../finance/budget.html">预决算管理</a>
+             <a class="menu" href="../finance/dismiss.html">辞退工资</a>
+             <a class="menu" href="../finance/bonus.html">年终奖</a>
+        </div>
+    </div>
+    <div id="div_top">
+        <ul class="top_icon">
+            <li><a href="../user/help.html" class="top_a"><i class="hIcon ico_jsq"></i><span>帮助</span></a></li>
+            <li><a href="javascript:void(0);" class="top_a"><i class="hIcon ico_tc"></i><span>退出</span></a></li>
+            <li>
+              <a href="../user/userEdit.html"class="username">
+                  <span><img src="../../../images/nopic.png"/></span>
+                  <p>
+                      <strong>代用名</strong><br/>
+                      人力资源管理
+                  </p>
+              </a>
+            </li>
+        </ul>
+    </div>
+   <!--主体开始-->  
+<div class="content">
+        <ul class="breadcrumb">
+            <li><a href="../index.html">首页</a> <span class="divider">/</span></li>
+            <li class="active">离职管理</li>
+        </ul>
+
+        <div class="container-fluid">
+                    
+<div class="btn-toolbar">
+    <span class="pull-right">
+    	<button class="btn btn-info">复 职</button>
+    </span>
+    <a class="btn btn-success" href="leaveUI.html"><img src="../../../images/icon/plus.png"/> 离职办理</a>　　
+    <input type="text" value="" placeholder="姓名/身份证号" class="input-medium">
+    <input name="name" type="button" value="查询" class="btn">
+</div>
+
+<div class="block-tab">
+    <table class="table-mins">
+      <thead>
+        <tr>
+          <th width="15"><input type="checkbox" name="checkbox" id="checkbox"></th>
+          <th>职员代码</th>
+          <th>姓名</th>
+          <th>身份证号</th>
+          <th>职员类别</th>
+          <th>联系电话</th>
+          <th>合同年限</th>
+          <th>离职日期</th>
+        </tr>
+      </thead>
+      <tbody id="goaler">
+        <tr>
+          <td><input type="checkbox" name="checkbox" id="checkbox"></td>
+          <td>YG0006</td>
+          <td>王晓丽</td>
+          <td>420202199608650001</td>
+          <td>普通职员</td>
+          <td>18675756632</td>
+          <td>三年</td>
+          <td>2015-12-06</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<div class="block-foot">
+    <div class="pagination">
+        <a href="#">首页</a>
+        <a href="#">上一页</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">下一页</a>
+        <a href="#">末页</a>
+    </div>
+</div>
+
+        </div>
+    </div> 
+    
+<!--主体结束--> 
+</div>
+<script type="text/javascript" src="../../../js/goaler.js"></script>
+</body>
+</html>

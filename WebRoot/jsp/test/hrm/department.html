@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>部门管理</title>
+   		<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+    	<link rel="stylesheet" type="text/css" href="../../../css/theme.css">
+        
+        <link rel="stylesheet" href="../../../zTree/css/demo.css" type="text/css">
+        <link rel="stylesheet" href="../../../zTree/css/zTreeStyle/zTreeStyle.css" type="text/css">
+        <script type="text/javascript" src="../../../zTree/js/jquery-1.4.4.min.js"></script>
+        <script type="text/javascript" src="../../../zTree/js/jquery.ztree.core-3.5.js"></script>
+        <script type="text/javascript" src="../../../zTree/js/jquery.ztree.excheck-3.5.js"></script>
+        <script type="text/javascript">
+                var setting = {    };
+                var zNodes =[
+                    { name:"湖北维达通科技有限公司(黄石分公司)", open:true,
+                        children: [
+                            { name:"天津路分店",
+                                children: [
+                                    { name:"财务部111",
+										children: [
+											{ name:"小组"},
+										]},
+                                    { name:"人力资源部112"},
+                                    { name:"销售部113"},
+                                    { name:"后勤部114"}
+                                ]},
+                            { name:"黄石港分店",
+                                children: [
+                                    { name:"财务部121"},
+                                    { name:"人力资源部122"},
+                                    { name:"销售部123"},
+                                    { name:"后勤部124"}
+                                ]},
+                            { name:"西塞山分店", isParent:true}
+                        ]},
+                    { name:"湖北维达通科技有限公司(黄石分公司大冶分店)",
+                        children: [
+                            { name:"湖北维达通科技有限公司(黄石分公司大冶分店)", open:true,
+                                children: [
+                                    { name:"财务部211"},
+                                    { name:"人力资源部212"},
+                                    { name:"销售部213"},
+                                    { name:"后勤部214"}
+                                ]},
+                            { name:"湖北维达通科技有限公司(黄石分公司大冶分店)",
+                                children: [
+                                    { name:"财务部221"},
+                                    { name:"人力资源部222"},
+                                    { name:"销售部223"},
+                                    { name:"后勤部224"}
+                                ]},
+                            { name:"湖北维达通科技有限公司(黄石分公司大冶分店)",
+                                children: [
+                                    { name:"财务部231"},
+                                    { name:"人力资源部232"},
+                                    { name:"销售部233"},
+                                    { name:"后勤部234"}
+                                ]}
+                        ]},
+                    { name:"湖北维达通科技有限公司(黄石分公司天津路分店)", isParent:true}
+         
+                ];
+         
+                $(document).ready(function(){
+                    $.fn.zTree.init($("#tree"), setting, zNodes);
+                });
+        </script>
+	</head>
+<body>
+
+<div id="container">
+    <div id="div_left">
+        <div class="gs_logo"></div>
+        <div class="sidebar-nav">
+        	<a id="sub01" class="menu" href="#">人力资源管理</a>
+        	<ul class="nav-list i-sub01">
+                <li><a href="department.html" class="current">部门管理</a></li>
+                <li><a href="staff.html">员工管理</a></li>
+                <li><a href="check.html">假期管理</a></li>
+                <li><a href="insurance.html">保险核定</a></li>
+                <li><a href="leave.html">离职管理</a></li>
+             </ul> 
+             <a id="sub02" class="menu" href="#">财务管理</a>
+             <ul class="nav-list i-sub02">
+                <li><a href="../finance/contract.html">合同管理</a></li>
+                <li><a href="../finance/salary-report.html">部门工资上报</a></li>
+                <li><a href="../finance/payroll.html">工资发放</a></li>
+                <li><a href="../finance/historical-wage.html">历史工资明细</a></li>
+                <li><a href="../finance/time-piece.html">计件计时导入</a></li>
+                <li><a href="../finance/meals.html">餐费核定</a></li>
+                <li><a href="../finance/bill.html">话费核定</a></li>
+                <li><a href="../finance/achievement.html">绩效核定</a></li>
+             </ul> 
+             <a class="menu" href="../finance/budget.html">预决算管理</a>
+             <a class="menu" href="../finance/dismiss.html">辞退工资</a>
+             <a class="menu" href="../finance/bonus.html">年终奖</a>
+        </div>
+    </div>
+    <div id="div_top">
+        <ul class="top_icon">
+            <li><a href="../user/help.html" class="top_a"><i class="hIcon ico_jsq"></i><span>帮助</span></a></li>
+            <li><a href="javascript:void(0);" class="top_a"><i class="hIcon ico_tc"></i><span>退出</span></a></li>
+            <li>
+              <a href="../user/userEdit.html"class="username">
+                  <span><img src="../../../images/nopic.png"/></span>
+                  <p>
+                      <strong>代用名</strong><br/>
+                      人力资源管理
+                  </p>
+              </a>
+            </li>
+        </ul>
+    </div>
+   <!--主体开始-->  
+<div class="content">
+        <ul class="breadcrumb">
+            <li><a href="../index.html">首页</a> <span class="divider">/</span></li>
+            <li class="active">部门管理</li>
+        </ul>
+        <div class="container-fluid">
+              <div class="btn-toolbar">
+                  <a href="javascript:addPro()"  class="btn btn-success"><img src="../../../images/icon/plus.png"/> 新增</a> 　
+                  <a href="javascript:editPro()"  class="btn btn-warning"><img src="../../../images/icon/clipboard.png"/> 修改</a> 　
+                  <a href="javascript:proDelete()" class="btn btn-danger"><img src="../../../images/icon/cross.png"/> 删除</a> 
+              </div>
+              <div id="zhongxin">
+                  <ul id="tree" class="ztree" style="overflow:auto; width: 80%;">
+                      
+                  </ul>
+              </div>	
+
+		</div>
+    </div> 
+<!--主体结束--> 
+</div> 
+</body>
+</html>

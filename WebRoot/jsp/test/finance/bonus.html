@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>工资发放</title>
+   		<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+    	<link rel="stylesheet" type="text/css" href="../../../css/theme.css">
+	</head>
+<body>
+
+<div id="container">
+    <div id="div_left">
+        <div class="gs_logo"></div>
+        <div class="sidebar-nav">
+        	<a id="sub01" class="menu" href="#">人力资源管理</a>
+        	<ul class="nav-list i-sub01">
+                <li><a href="../hrm/department.html">部门管理</a></li>
+                <li><a href="../hrm/staff.html">员工管理</a></li>
+                <li><a href="../hrm/check.html">假期管理</a></li>
+                <li><a href="../hrm/insurance.html">保险核定</a></li>
+                <li><a href="../hrm/leave.html">离职管理</a></li>
+             </ul> 
+             <a id="sub02" class="menu" href="#">财务管理</a>
+             <ul class="nav-list i-sub02">
+                <li><a href="contract.html">合同管理</a></li>
+                <li><a href="salary-report.html">部门工资上报</a></li>
+                <li><a href="payroll.html">工资发放</a></li>
+                <li><a href="historical-wage.html">历史工资明细</a></li>
+                <li><a href="time-piece.html">计件计时导入</a></li>
+                <li><a href="meals.html">餐费核定</a></li>
+                <li><a href="bill.html">话费核定</a></li>
+                <li><a href="achievement.html">绩效核定</a></li>
+             </ul> 
+             <a class="menu" href="budget.html">预决算管理</a>
+             <a class="menu" href="dismiss.html">辞退工资</a>
+             <a class="menu" href="bonus.html">年终奖</a>
+        </div>
+    </div>
+    <div id="div_top">
+        <ul class="top_icon">
+            <li><a href="../user/help.html" class="top_a"><i class="hIcon ico_jsq"></i><span>帮助</span></a></li>
+            <li><a href="javascript:void(0);" class="top_a"><i class="hIcon ico_tc"></i><span>退出</span></a></li>
+            <li>
+              <a href="../user/userEdit.html" class="username">
+                  <span><img src="../images/nopic.png"/></span>
+                  <p>
+                      <strong>代用名</strong><br/>
+                      财务管理
+                  </p>
+              </a>
+            </li>
+        </ul>
+    </div>
+   <!--主体开始-->  
+<div class="content">
+        <ul class="breadcrumb">
+            <li><a href="../index.html">首页</a> <span class="divider">/</span></li>
+            <li class="active">工资发放</li>
+        </ul>
+
+        <div class="container-fluid">
+                    
+<div class="btn-toolbar">　
+	 <span class="pull-right">
+    	<input name="name" type="button" value="导入Excel" class="btn btn-success">　
+        <input name="name" type="button" value="导出Excel" class="btn btn-info">
+    </span>
+    <input type="text" value="" class="input-medium"><a class="btn btn-link">选择部门</a>　
+         <label><span>年份：</span><input type="text" value="" class="input-medium"></label>
+    	<input name="name" type="button" value="查询" class="btn">　
+</div>
+
+<div>
+    <table class="table-mins">
+      <thead>
+  <tr>
+    <th>在职状态</th>
+    <th>变动说明</th>
+    <th>凭证号</th>
+    <th>职员代码</th>
+    <th>职员姓名</th>
+    <th>性别</th>
+    <th>合同编号</th>
+    <th>部门全称</th>
+    <th>职员类别</th>
+    <th>入职时间</th>
+    <th>计算月份</th>
+    <th>12月工资</th>
+    <th>代扣社保</th>
+    <th>代扣公积金</th>
+    <th>月应纳税所得额</th>
+    <th>考核</th>
+    <th>终奖标准</th>
+    <th>考核后年终奖</th>
+    <th>应发年终奖</th>
+    <th>年终奖个税</th>
+    <th>补扣个税</th>
+    <th>实发合计</th>
+    <th>可用预算</th>
+  </tr>
+      </thead>
+      <tbody id="goaler">
+  <tr class="info">
+    <td colspan="9">共计:<span class="i-total">8000.00</span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+      </tbody>
+    </table>
+</div>
+<div class="block-foot">
+    <div class="pagination">
+        <a href="#">首页</a>
+        <a href="#">上一页</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">下一页</a>
+        <a href="#">末页</a>
+    </div>
+</div>
+
+        </div>
+    </div> 
+<!--主体结束--> 
+</div> 
+</body>
+</html>
